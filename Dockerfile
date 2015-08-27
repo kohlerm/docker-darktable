@@ -35,4 +35,4 @@ RUN mkdir -p /usr/share/icons/hicolor && \
 #COPY local.conf /etc/fonts/local.conf
 
 # Autorun darktable
-CMD [ "sh -c \"/usr/bin/darktable; /usr/bin/darktable\"" ]
+CMD [ "sh", "-c","/usr/bin/darktable; /usr/bin/darktable" ]
