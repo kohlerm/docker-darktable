@@ -1,5 +1,5 @@
 # Base docker image
-FROM ubuntu
+FROM ubuntu:wily
 MAINTAINER Markus Kohler <markus.kohler@gmail.com>
 
 
