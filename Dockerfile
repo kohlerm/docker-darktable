@@ -29,7 +29,6 @@ RUN mkdir -p /usr/share/icons/hicolor && \
         packagekit-gtk3-module \
         darktable \
 	--no-install-recommends && \
-	add-apt-repository "deb http://ppa.launchpad.net/pmjdebruijn/darktable-release/ubuntu vivid main" && \
 	 rm -rf /var/lib/apt/lists/*
 
 #COPY local.conf /etc/fonts/local.conf
