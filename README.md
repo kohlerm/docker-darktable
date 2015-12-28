@@ -2,7 +2,7 @@
 Run it like this:
 
 ````
-docker run  -ti -v /tmp/.X11-unix:/tmp/.X11-unix  -e DISPLAY=$DISPLAY darktable
+docker run  -ti -v /tmp/.X11-unix:/tmp/.X11-unix -v $HOME/Pictures/darktable:/data -e DISPLAY=$DISPLAY darktable_ubuntu15
 ````
 You probably want to map more volumes for you data and potentially darktable config files (not tested yet)
 
