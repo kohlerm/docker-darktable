@@ -5,6 +5,8 @@ MAINTAINER Markus Kohler <markus.kohler@gmail.com>
 
 # Install Darktable
 RUN mkdir -p /usr/share/icons/hicolor && \
+        echo 'deb http://ppa.launchpad.net/pmjdebruijn/darktable-release/ubuntu wily main' >> /etc/apt/sources.list && \
+        apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 40C18E9EC07EE05F && \
 	apt-get update && apt-get install -y \
 	ca-certificates \
 	gconf-service \
@@ -34,4 +36,4 @@ RUN mkdir -p /usr/share/icons/hicolor && \
 #COPY local.conf /etc/fonts/local.conf
 
 # Autorun darktable
-CMD [ "sh", "-c","/usr/bin/darktable; /usr/bin/darktable" ]
+CMD [ "sh", "-c","/usr/bin/darktable" ]
